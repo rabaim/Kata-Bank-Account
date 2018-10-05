@@ -16,7 +16,7 @@ public final class Transaction {
 		super();
 		this.amount = amount;
 		this.date = date;
-		this.operation = (amount > 0) ? TrasactionType.DEPOSIT : TrasactionType.WITHDRAWAL;
+		this.operation = (amount >= 0) ? TrasactionType.DEPOSIT : TrasactionType.WITHDRAWAL;
 	}
 
 	/**
